@@ -1,0 +1,25 @@
+{
+  "name": "vitessecms/google",
+  "type": "library",
+  "description": "Google module for VitesseCms",
+  "keywords": ["php","phalcon","vitessecms"],
+  "homepage": "https://github.com/thedigitalproblemsolver/VitesseCMS",
+  "license": "GPL-2.0-or-later",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Jasper Jaklofsky",
+      "email": "info@thedigitalproblemsolver.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VitesseCms\\Google\\": "src/"
+    }
+  },
+  "require": {
+    "vitessecms/setting": "~0.0.10",
+    "vitessecms/form": "~0.0.10",
+    "vitessecms/install": "~0.0.17"
+  }
+}
