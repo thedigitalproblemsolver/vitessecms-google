@@ -1,11 +1,11 @@
 {
-  "name": "vitessecms/import",
+  "name": "vitessecms/google",
   "type": "library",
-  "description": "Import module for VitesseCms",
+  "description": "Google module for VitesseCms",
   "keywords": ["php","phalcon","vitessecms"],
   "homepage": "https://github.com/thedigitalproblemsolver/VitesseCMS",
   "license": "GPL-2.0-or-later",
-  "version": "0.0.11",
+  "version": "0.0.1",
   "authors": [
     {
       "name": "Jasper Jaklofsky",
@@ -14,17 +14,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "VitesseCms\\Import\\": "src/"
+      "VitesseCms\\Google\\": "src/"
     }
   },
   "require": {
-    "vitessecms/datagroup": "~0.0.7",
-    "vitessecms/datafield": "~0.0.10",
-    "vitessecms/admin": "~0.0.26",
-    "vitessecms/content": "~0.0.15",
-    "vitessecms/core": "~0.0.18",
-    "vitessecms/database": "~0.0.5",
-    "vitessecms/language": "~0.0.2",
-    "vitessecms/form": "~0.0.10"
+    "vitessecms/setting": "~0.0.7",
+    "vitessecms/form": "~0.0.10",
+    "vitessecms/install": "~0.0.16"
   }
 }
