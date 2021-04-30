@@ -1,0 +1,30 @@
+{
+  "name": "vitessecms/import",
+  "type": "library",
+  "description": "Import module for VitesseCms",
+  "keywords": ["php","phalcon","vitessecms"],
+  "homepage": "https://github.com/thedigitalproblemsolver/VitesseCMS",
+  "license": "GPL-2.0-or-later",
+  "version": "0.0.11",
+  "authors": [
+    {
+      "name": "Jasper Jaklofsky",
+      "email": "info@thedigitalproblemsolver.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VitesseCms\\Import\\": "src/"
+    }
+  },
+  "require": {
+    "vitessecms/datagroup": "~0.0.7",
+    "vitessecms/datafield": "~0.0.10",
+    "vitessecms/admin": "~0.0.26",
+    "vitessecms/content": "~0.0.15",
+    "vitessecms/core": "~0.0.18",
+    "vitessecms/database": "~0.0.5",
+    "vitessecms/language": "~0.0.2",
+    "vitessecms/form": "~0.0.10"
+  }
+}
