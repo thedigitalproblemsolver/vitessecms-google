@@ -2,6 +2,7 @@
 
 namespace VitesseCms\Google\Controllers;
 
+use VitesseCms\Google\Enums\GoogleEnum;
 use VitesseCms\Google\Forms\GoogleToolsForm;
 use VitesseCms\Install\AbstractCreatorController;
 use VitesseCms\Setting\Enum\CallingNameEnum;
@@ -54,6 +55,17 @@ class AdmininstallController extends AbstractCreatorController
                 'type' => TypeEnum::TEXT,
                 'value' => $this->request->get('google_adsense_automaticads'),
                 'name' => 'Google Adsense Automatic ads',
+            ];
+        endif;
+
+        if (
+            !$this->setting->has(GoogleEnum::GOOGLE_ADSENSE_ADSTXT, false)
+            && !empty($this->request->get(GoogleEnum::GOOGLE_ADSENSE_ADSTXT))
+        ) :
+            $settings[GoogleEnum::GOOGLE_ADSENSE_ADSTXT] = [
+                'type' => TypeEnum::TEXT,
+                'value' => $this->request->get(GoogleEnum::GOOGLE_ADSENSE_ADSTXT),
+                'name' => 'Google Adsense ads.txt',
             ];
         endif;
 
