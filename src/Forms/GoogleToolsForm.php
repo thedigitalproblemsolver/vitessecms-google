@@ -3,6 +3,7 @@
 namespace VitesseCms\Google\Forms;
 
 use VitesseCms\Form\AbstractForm;
+use VitesseCms\Google\Enums\GoogleEnum;
 use VitesseCms\Setting\Enum\CallingNameEnum;
 
 class GoogleToolsForm extends AbstractForm
@@ -19,6 +20,10 @@ class GoogleToolsForm extends AbstractForm
 
         if (!$this->setting->has(CallingNameEnum::GOOGLE_ADSENSE_AUTOMATICADS, false)) :
             $this->addText('Google Adsense Automatic ads', 'google_adsense_automaticads');
+        endif;
+
+        if (!$this->setting->has(GoogleEnum::GOOGLE_ADSENSE_ADSTXT, false)) :
+            $this->addText('Google Adsense ads.txt', GoogleEnum::GOOGLE_ADSENSE_ADSTXT);
         endif;
 
         $this->addSubmitButton('create');
