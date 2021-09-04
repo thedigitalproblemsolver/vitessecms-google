@@ -18,7 +18,7 @@
     }
   },
   "require": {
-    "vitessecms/setting": "~0.2.4",
+    "vitessecms/setting": "~0.2.5",
     "vitessecms/form": "~0.2.7",
     "vitessecms/install": "~0.2.6"
   }
