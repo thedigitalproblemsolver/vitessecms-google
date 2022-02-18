@@ -26,6 +26,14 @@ class GoogleToolsForm extends AbstractForm
             $this->addText('Google Adsense ads.txt', GoogleEnum::GOOGLE_ADSENSE_ADSTXT);
         endif;
 
+        if (!$this->setting->has(GoogleEnum::GOOGLE_RECAPTCHA_KEY, false)) :
+            $this->addText('Google Recaptcha key', GoogleEnum::GOOGLE_RECAPTCHA_KEY);
+        endif;
+
+        if (!$this->setting->has(GoogleEnum::GOOGLE_RECAPTCHA_SECRET, false)) :
+            $this->addText('Google Recaptcha secret', GoogleEnum::GOOGLE_RECAPTCHA_SECRET);
+        endif;
+
         $this->addSubmitButton('create');
 
         return $this;

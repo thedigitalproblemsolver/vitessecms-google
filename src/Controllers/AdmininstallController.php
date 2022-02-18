@@ -69,6 +69,28 @@ class AdmininstallController extends AbstractCreatorController
             ];
         endif;
 
+        if (
+            !$this->setting->has(GoogleEnum::GOOGLE_RECAPTCHA_KEY, false)
+            && !empty($this->request->get(GoogleEnum::GOOGLE_RECAPTCHA_KEY))
+        ) :
+            $settings[GoogleEnum::GOOGLE_RECAPTCHA_KEY] = [
+                'type' => TypeEnum::TEXT,
+                'value' => $this->request->get(GoogleEnum::GOOGLE_RECAPTCHA_KEY),
+                'name' => 'Google Recaptcha key',
+            ];
+        endif;
+
+        if (
+            !$this->setting->has(GoogleEnum::GOOGLE_RECAPTCHA_SECRET, false)
+            && !empty($this->request->get(GoogleEnum::GOOGLE_RECAPTCHA_SECRET))
+        ) :
+            $settings[GoogleEnum::GOOGLE_RECAPTCHA_SECRET] = [
+                'type' => TypeEnum::TEXT,
+                'value' => $this->request->get(GoogleEnum::GOOGLE_RECAPTCHA_SECRET),
+                'name' => 'Google Recaptcha secret',
+            ];
+        endif;
+
         $this->createSettings($settings);
 
         $this->flash->setSucces('Google properties created');
