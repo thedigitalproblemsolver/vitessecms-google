@@ -4,6 +4,8 @@ namespace VitesseCms\Google\Enums;
 
 use VitesseCms\Core\AbstractEnum;
 
-class GoogleEnum extends AbstractEnum {
+class GoogleEnum extends AbstractEnum
+{
     public const GOOGLE_ADSENSE_ADSTXT = 'GOOGLE_ADSENSE_ADSTXT';
+    public const DIALOGFLOW_WEBHOOK_EVENT = 'dialogflow.webhook';
 }
