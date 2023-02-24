@@ -18,7 +18,7 @@
     }
   },
   "require": {
-    "vitessecms/setting": "~0.3.2",
+    "vitessecms/setting": "~0.3.3",
     "vitessecms/form": "~0.4.3",
     "vitessecms/install": "~0.3.3",
     "eristemena/dialogflow-fulfillment-webhook-php": "^1.3",
