@@ -12,7 +12,8 @@ class AdstxtController extends AbstractControllerFrontend
     private SettingService $settingService;
 
     public function OnConstruct(){
-        $this->settingService = $this->eventsManager->fire(SettingEnum::SERVICE_LISTENER->value, new \stdClass());
+        parent::OnConstruct();
+        $this->settingService = $this->eventsManager->fire(SettingEnum::ATTACH_SERVICE_LISTENER->value, new \stdClass());
     }
 
     public function IndexAction(): void
