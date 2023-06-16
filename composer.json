@@ -18,11 +18,11 @@
     }
   },
   "require": {
-    "vitessecms/setting": "^1.0.0",
+    "vitessecms/setting": "^1.0.1",
     "vitessecms/form": "^1.0.0",
     "vitessecms/install": "^1.0.0",
-    "vitessecms/core": "^1.1.0",
-    "vitessecms/content": "^1.0.0",
+    "vitessecms/core": "^1.2.0",
+    "vitessecms/content": "^1.1.0",
     "ext-json": "*"
   }
 }
