@@ -21,7 +21,7 @@
     "vitessecms/setting": "^1.0.1",
     "vitessecms/form": "^1.1.1",
     "vitessecms/install": "^1.0.2",
-    "vitessecms/core": "^1.3.3",
+    "vitessecms/core": "^1.3.4",
     "vitessecms/content": "^1.2.3",
     "ext-json": "*"
   }
