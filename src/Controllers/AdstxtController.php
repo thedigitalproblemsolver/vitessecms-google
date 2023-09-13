@@ -1,7 +1,9 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace VitesseCms\Google\Controllers;
 
+use stdClass;
 use VitesseCms\Core\AbstractControllerFrontend;
 use VitesseCms\Google\Enums\GoogleEnum;
 use VitesseCms\Setting\Enum\SettingEnum;
@@ -11,9 +13,10 @@ class AdstxtController extends AbstractControllerFrontend
 {
     private SettingService $settingService;
 
-    public function OnConstruct(){
+    public function OnConstruct()
+    {
         parent::OnConstruct();
-        $this->settingService = $this->eventsManager->fire(SettingEnum::ATTACH_SERVICE_LISTENER->value, new \stdClass());
+        $this->settingService = $this->eventsManager->fire(SettingEnum::ATTACH_SERVICE_LISTENER->value, new stdClass());
     }
 
     public function IndexAction(): void
