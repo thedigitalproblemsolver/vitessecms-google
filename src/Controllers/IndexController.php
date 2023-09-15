@@ -1,7 +1,9 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace VitesseCms\Google\Controllers;
 
+use stdClass;
 use VitesseCms\Content\Enum\ItemEnum;
 use VitesseCms\Content\Repositories\ItemRepository;
 use VitesseCms\Core\AbstractControllerFrontend;
@@ -14,7 +16,7 @@ class IndexController extends AbstractControllerFrontend
     {
         parent::onConstruct();
 
-        $this->itemRepository = $this->eventsManager->fire(ItemEnum::GET_REPOSITORY, new \stdClass());
+        $this->itemRepository = $this->eventsManager->fire(ItemEnum::GET_REPOSITORY, new stdClass());
     }
 
     public function setGeoCoordinatesAction(): void

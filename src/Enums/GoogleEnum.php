@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace VitesseCms\Google\Enums;
 
@@ -11,4 +13,5 @@ class GoogleEnum extends AbstractEnum
     public const GOOGLE_ADSENSE_AUTOMATICADS = 'GOOGLE_ADSENSE_AUTOMATICADS';
     public const GOOGLE_SITE_VERIFICATION = 'GOOGLE_SITE_VERIFICATION';
     public const DIALOGFLOW_WEBHOOK_EVENT = 'dialogflow.webhook';
+    public const GOOGLE_ADSENSE_METATAG = 'GOOGLE_ADSENSE_METATAG';
 }
